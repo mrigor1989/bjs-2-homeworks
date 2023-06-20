@@ -10,6 +10,7 @@ avg = +(sum / arr.length).toFixed(2);
 }
 
 function summElementsWorker(...arr) {
+  if(arr.length === 0){return 0};
   sum = 0;
   for(let i = 0; i < arr.length; i++){
     sum += arr[i];
@@ -18,9 +19,10 @@ function summElementsWorker(...arr) {
 }
 
 function differenceMaxMinWorker(...arr) {
-  let = min;
-  let = max;
-  let = MaxMinWorker;
+  if(arr.length === 0){return 0};
+  let  min;
+  let  max;
+  let  MaxMinWorker;
   min = Math.min(...arr);
   max = Math.max(...arr); 
   MaxMinWorker = max - min;
@@ -28,9 +30,10 @@ function differenceMaxMinWorker(...arr) {
 }
 
 function differenceEvenOddWorker(...arr) {
+  if(arr.length === 0){return 0};
   let sumEvenElement = 0;
   let sumOddElement = 0;
-  for(let i = 0; i > arr.length; i++){
+  for(let i = 0; i < arr.length; i++){
     if(arr[i] % 2 === 0){
       sumEvenElement += arr[i];
     }else{
@@ -41,9 +44,10 @@ function differenceEvenOddWorker(...arr) {
 }
 
 function averageEvenElementsWorker(...arr) {
+  if(arr.length === 0){return 0};
   let sumEvenElement = 0;
   let countEvenElement = 0;
-  for(let i = 0; i > arr.length; i++){
+  for(let i = 0; i < arr.length; i++){
     if(arr[i] % 2 === 0){
       sumEvenElement += arr[i];
       countEvenElement++;
