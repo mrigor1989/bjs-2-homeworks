@@ -34,11 +34,11 @@
  **Пример использования**
 
  ```js
-const sherlock = new PrintEditionItem(
+st sherlock = new PrintEditionItem(
   "Полное собрание повестей и рассказов о Шерлоке Холмсе в одном томе",
   2019,
   1008
-);
+);con
 
  console.log(sherlock.releaseDate); //2019
 console.log(sherlock.state); //100
